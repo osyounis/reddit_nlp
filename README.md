@@ -31,7 +31,7 @@ After cleaning my data, I decided to add two more columns to my `DataFrame` that
 
 After that I `CountVectorized()` all the comments, excluding stop words. Stop words are words that aren't very useful when it comes to searching for data. You can learn more about them by clicking [here](https://en.wikipedia.org/wiki/Stop_word). I then found the top 15 words used by each subreddit. Below is a graph showing these words:
 
-![Top 15 Most Used Words by Subreddit](https://raw.git.generalassemb.ly/osyounis/dsir-82/master/projects/project-3/figures/Frequent%20Words%20Bases%20on%20Subreddit.jpg?token=AAAJHNCVF6R5FWUFRDWYZ6DBJCZPC)
+![Top 15 Most Used Words by Subreddit](https://raw.githubusercontent.com/osyounis/reddit_nlp/main/figures/Frequent%20Words%20Bases%20on%20Subreddit.jpg)
 
 After that, I created a few models to try and find one that would best predict whether a comment belonged to the `DreamWorks` subreddit or the `Pixar` subreddit. With the use of `Pipeline` and `GridSearchCV` the best model I could come up with was a `pipeline` model that used a `CountVectorizer()` and a `MultinomialNB()`. The best train and test scores I got were as follows:
 
@@ -44,7 +44,7 @@ My model was overfitting, but not as badly as my other models. Ideally for this 
 
 The `precision` value I got was `0.7520` which can definately been improved. For a breakdown of my model's confusion matrix, see below:
 
-![Final Model Confusion Matrix](https://raw.git.generalassemb.ly/osyounis/dsir-82/master/projects/project-3/figures/Confusion%20Matrix.jpg?token=AAAJHNGZUCVFT5YBQEMYE5TBJCZSQ)
+![Final Model Confusion Matrix](https://raw.githubusercontent.com/osyounis/reddit_nlp/main/figures/Confusion%20Matrix.jpg)
 
 ---
 
